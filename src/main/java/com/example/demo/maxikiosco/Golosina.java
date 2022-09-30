@@ -1,26 +1,33 @@
 package com.example.demo.maxikiosco;
 
+import java.util.UUID;
+
 public class Golosina {
     private double precio;
     private String tipo;
     private String nombre;
+    private String id;
+
 
     public Golosina(double precio, String tipo, String nombre) {
         this.precio = precio;
         this.tipo = tipo;
         this.nombre = nombre;
+        this.id = UUID.randomUUID().toString();
     }
-
     public Golosina() {
     }
-
     @Override
     public String toString() {
-        return "Golosina{" +
+        return "Golosina" +
                 "precio=" + precio +
                 ", tipo='" + tipo + '\'' +
                 ", nombre='" + nombre + '\'' +
                 '}';
+    }
+
+    public String getId() {
+        return id;
     }
 
     public double getPrecio() {

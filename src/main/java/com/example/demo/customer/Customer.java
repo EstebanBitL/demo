@@ -4,22 +4,17 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.Date;
-
 public class Customer {
     private String name;
-
     public Customer() {
     }
-
     public Customer(String name, String lastname, boolean allowed, LocalDate birthday) {
         this.name = name;
         this.lastname = lastname;
         this.allowed = allowed;
         this.birthday = birthday;
-
         calculateAge();
     }
-
     private String lastname;
     private int age;
     private boolean allowed;

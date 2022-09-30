@@ -8,9 +8,6 @@ import java.time.LocalDate;
 
 @RestController
 public class CustomerController {
-
-
-
     @RequestMapping("/algo")
     String home() {
         LocalDate date = LocalDate.of(2010,9,12);
